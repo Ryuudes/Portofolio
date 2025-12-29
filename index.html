@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Fotografer & Filmmaker | 2025</title>
+    <title>Nahnoo Noor Fadheel M | Portofolio 2025</title>
     <link href="fonts.googleapis.com" rel="stylesheet">
     <style>
         :root {
-            --accent: #ff3e3e; /* Warna aksen merah film */
-            --glass: rgba(0, 0, 0, 0.75);
+            --accent: #ff3e3e;
+            --glass: rgba(0, 0, 0, 0.85);
             --text: #ffffff;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
+            /* Background tetap dengan overlay gelap agar tulisan terbaca */
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://media.fastdl.app/get?__sig=HM_EOEPCljikd0IrqGEOXg&__expires=1766991198&uri=https%3A%2F%2Fscontent-ord5-1.cdninstagram.com%2Fv%2Ft51.2885-15%2F502706363_17930604186049439_625138888284185187_n.webp%3Fstp%3Ddst-jpg_e35_s1080x1080_sh0.08_tt6%26_nc_ht%3Dscontent-ord5-1.cdninstagram.com%26_nc_cat%3D111%26_nc_oc%3DQ6cZ2QFrhGRsCIN3o5z7ZdIWXbt-nGR6in59jGR2FF3TJsqJEUfhlatKOHjLxideKFR193liPoIf3gxpz7ZGWbOK2mWD%26_nc_ohc%3DSB0sJaYrQSMQ7kNvwHeS155%26_nc_gid%3DJzv9Nyujv0pbhNkN6VaKdA%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfkpoLunKfhmQuG_vZiPGcfgBpU4wv0RBVOv8bMGEl0KRw%26oe%3D6957F90C%26_nc_sid%3Dd885a2&filename=502706363_17930604186049439_625138888284185187_n.webp'); /* GANTI LINK INI UNTUK BG UTAMA */
+                        url('https://media.fastdl.app/get?__sig=LG0G73DiSewF8oMtYPiIug&__expires=1766992344&uri=https%3A%2F%2Fscontent-ord5-1.cdninstagram.com%2Fv%2Ft51.2885-15%2F502706363_17930604186049439_625138888284185187_n.webp%3Fstp%3Ddst-jpg_e35_s1080x1080_sh0.08_tt6%26_nc_ht%3Dscontent-ord5-1.cdninstagram.com%26_nc_cat%3D111%26_nc_oc%3DQ6cZ2QFrhGRsCIN3o5z7ZdIWXbt-nGR6in59jGR2FF3TJsqJEUfhlatKOHjLxideKFR193liPoIf3gxpz7ZGWbOK2mWD%26_nc_ohc%3DSB0sJaYrQSMQ7kNvwHeS155%26_nc_gid%3DJzv9Nyujv0pbhNkN6VaKdA%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfkpoLunKfhmQuG_vZiPGcfgBpU4wv0RBVOv8bMGEl0KRw%26oe%3D6957F90C%26_nc_sid%3Dd885a2&filename=502706363_17930604186049439_625138888284185187_n.webp');
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
             color: var(--text);
             font-family: 'Plus Jakarta Sans', sans-serif;
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
+        /* Navigasi */
         .overlay-nav {
             position: fixed;
             top: 0; width: 100%;
             padding: 20px;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0.7);
             backdrop-filter: blur(10px);
             z-index: 1000;
             display: flex;
@@ -40,7 +43,7 @@
         .overlay-nav a {
             color: white;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: 0.3s;
@@ -59,37 +62,70 @@
 
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 10vw, 5rem);
+            font-size: clamp(2.5rem, 8vw, 5rem);
             margin-bottom: 10px;
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 100px 20px;
+            padding: 50px 20px;
         }
 
         section {
             background: var(--glass);
             margin-bottom: 50px;
             padding: 40px;
-            border-radius: 15px;
-            backdrop-filter: blur(5px);
+            border-radius: 20px;
             border: 1px solid rgba(255,255,255,0.1);
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            border-bottom: 2px solid var(--accent);
-            display: inline-block;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--accent);
         }
 
-        /* 1. Photo Gallery Grid */
+        .about-text {
+            line-height: 1.8;
+            color: #ddd;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        /* Tombol Enter */
+        .btn-enter {
+            background: none;
+            color: white;
+            border: 1px solid var(--accent);
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.4s;
+            width: fit-content;
+        }
+
+        .btn-enter:hover {
+            background: var(--accent);
+            box-shadow: 0 0 20px rgba(255, 62, 62, 0.4);
+        }
+
+        /* Galeri & Video (Sembunyi di awal) */
+        .hidden-content {
+            display: none;
+        }
+
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 15px;
         }
 
@@ -97,53 +133,62 @@
             width: 100%;
             height: 250px;
             object-fit: cover;
-            border-radius: 8px;
-            transition: 0.4s;
-            cursor: pointer;
-        }
-
-        .photo-grid img:hover { transform: scale(1.03); filter: brightness(1.1); }
-
-        /* 2 & 3. Video & Film Gallery */
-        .video-item {
-            margin-bottom: 30px;
+            border-radius: 10px;
         }
 
         .video-wrapper {
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
-            margin-top: 15px;
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         .video-wrapper iframe {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            border-radius: 10px;
         }
 
-        /* 4. Contact Section */
+        /* Animasi Transisi */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+            to { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+
+        .fade-out {
+            animation: fadeOut 0.4s ease forwards;
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        /* Kontak */
         .contact-links {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
         }
 
         .contact-card {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            padding: 15px;
             text-align: center;
             border-radius: 10px;
             text-decoration: none;
             color: white;
+            border: 1px solid rgba(255,255,255,0.1);
             transition: 0.3s;
         }
 
-        .contact-card:hover { background: var(--accent); transform: translateY(-5px); }
+        .contact-card:hover { background: var(--accent); }
 
-        footer { text-align: center; padding: 50px; font-size: 0.8rem; opacity: 0.6; }
-
+        footer { text-align: center; padding: 80px; opacity: 0.5; font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -157,69 +202,112 @@
 
     <header>
         <h1>NAHNOO NOOR FADHEEL M</h1>
-        <p>Visual Storyteller | Photographer | Filmmaker</p>
+        <p style="letter-spacing: 4px;">VISUAL STORYTELLER</p>
     </header>
 
     <div class="container">
         
-         <section id="about">
-            <h2>The Storyteller</h2>
-            <div class="about-text">
-                <p>Halo, saya <strong>Nahnoo</strong>. Saya percaya bahwa setiap momen memiliki cerita yang layak diceritakan melalui lensa. Sebagai seorang visual storyteller, fokus saya adalah menangkap emosi dalam bentuk fotografi dan menciptakan narasi sinematik dalam video.</p>
-                <p style="margin-top: 15px;">Mulai dari dokumenter hingga proyek kreatif, saya berdedikasi untuk menghasilkan visual yang tidak hanya indah dilihat, tetapi juga memiliki makna yang dalam.</p>
-            </div>
-        </section>
-
         <!-- 1. PHOTO GALLERY -->
         <section id="photo">
-            <h2>Photo Gallery</h2>
-            <div class="photo-grid">
-                <img src="images.unsplash.com" alt="Work 1">
-                <img src="images.unsplash.com" alt="Work 2">
-                <img src="images.unsplash.com" alt="Work 3">
-                <img src="images.unsplash.com" alt="Work 4">
+            <div id="photo-intro">
+                <h2>Photography Gallery</h2>
+                <p class="about-text">Kumpulan karya visual yang merangkum cerita, rasa, dan karakter dalam setiap framenya.</p>
+                <button class="btn-enter" onclick="showContent('photo-intro', 'photo-content')">Enter Gallery</button>
+            </div>
+            
+            <div id="photo-content" class="hidden-content">
+                <div class="photo-grid">
+                    <img src="https://media.fastdl.app/get?__sig=d0X0h4OCRUWBtXWv7w4x-g&__expires=1766992344&uri=https%3A%2F%2Fscontent-ord5-1.cdninstagram.com%2Fv%2Ft51.2885-15%2F502620273_17930604195049439_7224436965233181544_n.webp%3Fstp%3Ddst-jpg_e35_s1080x1080_sh0.08_tt6%26_nc_ht%3Dscontent-ord5-1.cdninstagram.com%26_nc_cat%3D111%26_nc_oc%3DQ6cZ2QFrhGRsCIN3o5z7ZdIWXbt-nGR6in59jGR2FF3TJsqJEUfhlatKOHjLxideKFR193liPoIf3gxpz7ZGWbOK2mWD%26_nc_ohc%3D3tE8zDXEUD0Q7kNvwFOj4Qh%26_nc_gid%3DJzv9Nyujv0pbhNkN6VaKdA%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfnLLphAJkdWNY5Eyr--H2bA-waS6Jbhnwv19KJ0YYo_wA%26oe%3D6957F238%26_nc_sid%3Dd885a2&filename=502620273_17930604195049439_7224436965233181544_n.webp" alt="Street Photo">
+                    <img src="https://media.fastdl.app/get?__sig=VyZ5iNfFYKFJKyBg1Mc9rw&__expires=1766993013&uri=https%3A%2F%2Fscontent-ord5-1.cdninstagram.com%2Fv%2Ft51.2885-15%2F514315522_17934132546049439_5094556317869382352_n.webp%3Fstp%3Ddst-jpg_e35_s1080x1080_sh0.08_tt6%26_nc_ht%3Dscontent-ord5-1.cdninstagram.com%26_nc_cat%3D111%26_nc_oc%3DQ6cZ2QHOCNi5pxelWYJqefMwku8RL8Mkftjk2X3ACBQXACNgOcwfdgS56_MSAlL0Ql5lmWq7qUp7Nmtf4ZvZgI9JrbBv%26_nc_ohc%3DV8rvQNICUuIQ7kNvwEBujhR%26_nc_gid%3DZijtXilMJQ9b0lOa5bwRLQ%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfmA0N7eg9104xMS15Gqf1ydfcJEclMGkRL-mRfsb-GvSg%26oe%3D69580FBA%26_nc_sid%3Dd885a2&filename=514315522_17934132546049439_5094556317869382352_n.webp" alt="Animals">
+                    <img src="https://media.fastdl.app/get?__sig=r6P98VEwNAFXf3rZevQq8Q&__expires=1766993319&uri=https%3A%2F%2Fscontent-ord5-3.cdninstagram.com%2Fv%2Ft51.29350-15%2F379648077_6553697024749170_7131993798339894107_n.heic%3Fstp%3Ddst-jpg_e35_tt6%26_nc_ht%3Dscontent-ord5-3.cdninstagram.com%26_nc_cat%3D106%26_nc_oc%3DQ6cZ2QHLrGlGr4TNIiNahHe5L8t4j3i7KnU8sTRZ0a9bb0-vpE_yHJROQgCOm__ESs2ScH-SNhQo2obVfqK6_4y6Pk0M%26_nc_ohc%3DQyVG1cb7ivsQ7kNvwFgXXjL%26_nc_gid%3DBCYVv-aUplkXiW3TMcJlWA%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_Afl6t_qIN6HLTIs68iSloEwXGNfmCrXoaXV-XCV2KZdl0Q%26oe%3D6957E102%26_nc_sid%3Dd885a2&filename=379648077_6553697024749170_7131993798339894107_n.heic" alt="Photo Model">
+                    <img src="https://media.fastdl.app/get?__sig=bhN9iDJJ82IUs2FO2Z2jHw&__expires=1766993398&uri=https%3A%2F%2Fscontent-ord5-1.cdninstagram.com%2Fv%2Ft51.2885-15%2F557890606_17944688784049439_6467956255892919736_n.webp%3Fstp%3Ddst-jpg_e35_p1080x1080_sh0.08_tt6%26_nc_ht%3Dscontent-ord5-1.cdninstagram.com%26_nc_cat%3D111%26_nc_oc%3DQ6cZ2QGlu1q0MzmsgXuH_CeHrg5caTEKGsAJY22Yje8yJ-heTvw960j9CWoepk35y1EdJDKo-NEDovb0t6J6o3xtPIbR%26_nc_ohc%3D6qiKCERtcOQQ7kNvwEvGqcj%26_nc_gid%3D-pno8G9gMgWCGd8X8x8rJA%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfksIOXRm-aPKRQtpXxjxtP-pFJHZjwGtFRsc1XHKAy6ow%26oe%3D6957E83F%26_nc_sid%3Dd885a2&filename=557890606_17944688784049439_6467956255892919736_n.webp" alt="Nature">
+                </div>
+                <button onclick="hideContent('photo-intro', 'photo-content')" style="margin-top:20px; background:none; color:gray; border:none; cursor:pointer;">← Back</button>
             </div>
         </section>
 
-        <!-- 2. VIDEO GALLERY (Commercial/Social) -->
+        <!-- 2. VIDEO GALLERY -->
         <section id="video">
-            <h2>Video Gallery</h2>
-            <div class="video-item">
-                <p>Commercial Showreel 2025</p>
+            <div id="video-intro">
+                <h2>Video Projects</h2>
+                <p class="about-text">Kumpulan karya video yang merangkum cerita, emosi, dan ritme visual.</p>
+                <button class="btn-enter" onclick="showContent('video-intro', 'video-content')">Watch Video</button>
+            </div>
+
+            <div id="video-content" class="hidden-content">
                 <div class="video-wrapper">
-                    <iframe src="www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.instagram.com/reel/DS0LHU-gWAYnO0928ZrlxpUpXmlGORkGQmenFE0/?igsh=MTk4cWplYXgzbWk2eQ==" frameborder="0" allowfullscreen></iframe>
                 </div>
+                <button onclick="hideContent('video-intro', 'video-content')" style="margin-top:20px; background:none; color:gray; border:none; cursor:pointer;">← Back</button>
             </div>
         </section>
 
-        <!-- 3. FILM GALLERY (Short Films/Documentary) -->
+        <!-- 3. FILM GALLERY -->
         <section id="film">
-            <h2>Film Gallery</h2>
-            <div class="video-item">
-                <p>Short Film: "The Last Frame"</p>
-                <div class="video-wrapper">
-                    <!-- Ganti ID Video YouTube Anda di sini -->
-                    <iframe src="www.youtube.com" frameborder="0" allowfullscreen></iframe>
-                </div>
+            <div id="film-intro">
+                <h2>Cinematography</h2>
+                <p class="about-text">Rangkaian karya sinema yang menghidupkan cerita melalui cahaya.</p>
+                <button class="btn-enter" onclick="showContent('film-intro', 'film-content')">View Films</button>
             </div>
+
+             <div style="margin-top: 30px; padding: 40px; border: 1px dashed rgba(255,255,255,0.3); border-radius: 15px; background: rgba(255,255,255,0.03);">
+            <h3 style="letter-spacing: 5px; color: var(--accent); font-family: 'Playfair Display', serif;">COMING SOON</h3>
+            <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 10px; text-transform: uppercase; letter-spacing: 2px;">New Project in Production • 2026</p>
+        </div>
+        
+        <p style="margin-top: 20px; font-style: italic; opacity: 0.5; font-size: 0.9rem;">"Something big is moving behind the lens."</p>
+    </div>
         </section>
 
-        <!-- 4. CONTACT SECTION -->
+        <!-- 4. CONTACT -->
         <section id="contact">
             <h2>Get In Touch</h2>
             <div class="contact-links">
-                <a href="instagram.com" class="contact-card">Instagram</a>
-                <a href="tiktok.com" class="contact-card">TikTok</a>
-                <a href="mailto:email@anda.com" class="contact-card">Email Me</a>
-                <a href="wa.me" class="contact-card">WhatsApp</a>
+                <a href="https://www.instagram.com/nonoskyeee_" target="_blank" class="contact-card">Instagram</a>
+                <a href="https://www.tiktok.com/@nonoskyee_" target="_blank" class="contact-card">TikTok</a>
+                <a href="mailto:ryuukanagata@gmail.com" class="contact-card">Email Me</a>
+                <a href="wa.me/6285293473292" target="_blank" class="contact-card">WhatsApp</a>
             </div>
         </section>
 
     </div>
 
     <footer>
-        &copy; 2025 Nonoskyee. Built for Visual Excellence.
+        &copy; 2025 Nonoskyee. Built for Visual Excellence ✨
     </footer>
 
+    <!-- SCRIPT TRANSISI HALUS -->
+    <script>
+        function showContent(introId, contentId) {
+            const intro = document.getElementById(introId);
+            const content = document.getElementById(contentId);
+
+            intro.classList.add('fade-out');
+            
+            setTimeout(() => {
+                intro.style.display = 'none';
+                intro.classList.remove('fade-out');
+                
+                content.style.display = (contentId === 'photo-content') ? 'grid' : 'block';
+                content.classList.add('fade-in-up');
+            }, 400);
+        }
+
+        function hideContent(introId, contentId) {
+            const intro = document.getElementById(introId);
+            const content = document.getElementById(contentId);
+
+            content.classList.add('fade-out');
+
+            setTimeout(() => {
+                content.style.display = 'none';
+                content.classList.remove('fade-out');
+                content.classList.remove('fade-in-up');
+
+                intro.style.display = 'block';
+                intro.classList.add('fade-in-up');
+            }, 400);
+        }
+    </script>
 </body>
 </html>
